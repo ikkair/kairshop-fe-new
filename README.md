@@ -119,7 +119,7 @@ npm build
   </tr>
   <tr>
     <td><img width="350px" src="./public/docs/Kairshop MyProduct Create Product.jpg" border="0" alt="Create Product" /> </td>
-     <td><img width="350px" src="./public/docs/Kairshop MyBag.jpg" border="0" alt="My Bag" /></td>
+     <td><img width="350px" src="./public/docs/Kairshop Mybag.jpg" border="0" alt="My Bag" /></td>
   </tr>
    <tr>
     <td>Create Product</td>
