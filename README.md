@@ -7,9 +7,7 @@
   <p align="center">
     <a href="https://github.com/ikkair/kairshop-fe-new"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="#">View Demo</a>
-    ·
-    <a href="#">Api Demo</a>
+    <a href="https://kairshop-fe-ikkair.vercel.app/">View Demo</a>
   </p>
 </p>
 
@@ -133,4 +131,4 @@ npm build
 
 :rocket: [`Backend Kairshop`](https://github.com/ikkair/kairshop)
 
-:rocket: [`Demo Kairshop`](#)
+:rocket: [`Demo Kairshop`](https://kairshop-fe-ikkair.vercel.app/)
