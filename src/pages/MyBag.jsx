@@ -58,7 +58,7 @@ function MyBag() {
                   </div>
                   <Adder />
                   <span className="fs-5">
-                    <b>$ 20.0</b>
+                    <b>Rp.20000</b>
                   </span>
                 </div>
               </div>
@@ -88,7 +88,7 @@ function MyBag() {
                   </div>
                   <Adder />
                   <span className="fs-5">
-                    <b>$ 20.0</b>
+                    <b>Rp.20000</b>
                   </span>
                 </div>
               </div>
@@ -100,7 +100,7 @@ function MyBag() {
                 <b className="fs-5 metropolis-b">Shopping Summary</b>
                 <div className="d-flex justify-content-between mb-3">
                   <span className="fs-5 text-secondary">Total Price</span>
-                  <span className="text-danger metropolis-b fs-4">$ 40.0</span>
+                  <span className="text-danger metropolis-b fs-4">Rp.40000</span>
                 </div>
                 <button className="btn btn-primary rounded-pill w-100">
                   Buy

@@ -92,7 +92,7 @@ npm build
 
 <table>
  <tr>
-    <td><img width="350px" src="./public/docs/Kairshop Landing Page.jpg" border="0" alt="Landing Page" /></td>
+    <td><img width="350px" src="./public/docs/Kairshop Landing Page.png" border="0" alt="Landing Page" /></td>
     <td> <img width="350px" src="./public/docs/Kairshop Login.jpg" border="0"  alt="Login" /></td>
   </tr>
    <tr>

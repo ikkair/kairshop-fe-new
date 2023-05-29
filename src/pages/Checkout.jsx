@@ -52,7 +52,7 @@ function Checkout() {
                     </div>
                   </div>
                   <span className="fs-5">
-                    <b>$ 20.0</b>
+                    <b>Rp.20000</b>
                   </span>
                 </div>
               </div>
@@ -75,7 +75,7 @@ function Checkout() {
                     </div>
                   </div>
                   <span className="fs-5">
-                    <b>$ 20.0</b>
+                    <b>Rp.20000</b>
                   </span>
                 </div>
               </div>
@@ -87,16 +87,16 @@ function Checkout() {
                 <b className="fs-5 mb-3">Shopping summary</b>
                 <div className="d-flex justify-content-between">
                   <span className="fs-5 text-secondary">Order</span>
-                  <span className="text-danger fs-4">$ 40.0</span>
+                  <span className="text-danger fs-4">Rp.40000</span>
                 </div>
                 <div className="d-flex justify-content-between">
                   <span className="fs-5 text-secondary">Delivery</span>
-                  <span className="text-danger fs-4">$ 5.0</span>
+                  <span className="text-danger fs-4">Rp.5000</span>
                 </div>
                 <hr />
                 <div className="d-flex justify-content-between mb-3">
                   <span className="fs-5 text-secondary">Shopping summary</span>
-                  <span className="text-danger fs-4 metropolis-b">$ 45.0</span>
+                  <span className="text-danger fs-4 metropolis-b">Rp.45000</span>
                 </div>
                 <button
                   className="btn btn-primary rounded-pill w-100"
@@ -223,11 +223,11 @@ function Checkout() {
                 <br />
                 <div className="d-flex justify-content-between">
                   <span className="text-secondary">Order</span>
-                  <span className="metropolis-b">$ 40.0</span>
+                  <span className="metropolis-b">Rp.40000</span>
                 </div>
                 <div className="d-flex justify-content-between">
                   <span className="text-secondary">Delivery</span>
-                  <span className="metropolis-b">$ 5.0</span>
+                  <span className="metropolis-b">Rp5000</span>
                 </div>
               </div>
             </div>
@@ -235,7 +235,7 @@ function Checkout() {
               <div>
                 <span className="metropolis-b">Shopping summary</span>
                 <br />
-                <span className="metropolis-b fs-5 text-danger">$ 45.0</span>
+                <span className="metropolis-b fs-5 text-danger">Rp.45000</span>
               </div>
               <button
                 type="button"

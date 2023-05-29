@@ -1,9 +1,107 @@
-import React from "react";
+import React, { useState } from "react";
 import mainLogo from "../assets/images/Main Logo.svg";
 import { Link } from "react-router-dom";
 import authCSS from "../assets/css/auth.module.css";
+import Swal from "sweetalert2";
+import axios from "axios";
 
 function Login() {
+  const [formLoginSeller, setFormLoginSeller] = useState({
+    email: "",
+    password: ""
+  })
+  const [formLoginUser, setFormLoginUser] = useState({
+    email: "",
+    password: ""
+  })
+  const handleChangeSeller = (event) => {
+    setFormLoginSeller({
+      ...formLoginSeller,
+      [event.target.name]: event.target.value
+    })
+  }
+  const handleChangeUser = (event) => {
+    setFormLoginUser({
+      ...formLoginUser,
+      [event.target.name]: event.target.value
+    })
+  }
+  const handleLoginSeller = (event) => {
+    event.preventDefault()
+    console.log(formLoginSeller)
+    // axios.post(`${process.env.REACT_APP_BACKEND}/users/login`, formLoginUser)
+    //   .then((res) => {
+    //     console.log(res.data.data[0])
+    //     Swal.fire({
+    //       title: `Login Success`,
+    //       text: `${res.data.message}`,
+    //       icon: 'success',
+    //     });
+    //     const data = res.data.data[0]
+    //     localStorage.setItem('token', data.token);
+    //     localStorage.setItem('id', data.id);
+    //     localStorage.setItem('role', data.role);
+    //     localStorage.setItem('photo', data.photo);
+    //     // router.push("/")
+    //   })
+    //   .catch((err) => {
+    //     if (err.response && err.response.data) {
+    //       Swal.fire({
+    //         title: `Login Failed`,
+    //         text: `${err.response.data.message}`,
+    //         icon: 'error',
+    //       });
+    //     } else {
+    //       Swal.fire({
+    //         title: `Login Failed`,
+    //         text: `Unknown issue, please contact admin`,
+    //         icon: 'error',
+    //       });
+    //     }
+    //     setFormLoginUser({
+    //       email: "",
+    //       password: ""
+    //     })
+    //   })
+  }
+  const handleLoginUser = (event) => {
+    event.preventDefault()
+    console.log(formLoginUser)
+    // axios.post(`${process.env.REACT_APP_BACKEND}/users/login`, formLoginUser)
+    //   .then((res) => {
+    //     console.log(res.data.data[0])
+    //     Swal.fire({
+    //       title: `Login Success`,
+    //       text: `${res.data.message}`,
+    //       icon: 'success',
+    //     });
+    //     const data = res.data.data[0]
+    //     localStorage.setItem('token', data.token);
+    //     localStorage.setItem('id', data.id);
+    //     localStorage.setItem('role', data.role);
+    //     localStorage.setItem('photo', data.photo);
+    //     // router.push("/")
+    //   })
+    //   .catch((err) => {
+    //     if (err.response && err.response.data) {
+    //       Swal.fire({
+    //         title: `Login Failed`,
+    //         text: `${err.response.data.message}`,
+    //         icon: 'error',
+    //       });
+    //     } else {
+    //       Swal.fire({
+    //         title: `Login Failed`,
+    //         text: `Unknown issue, please contact admin`,
+    //         icon: 'error',
+    //       });
+    //     }
+    //     setFormLoginUser({
+    //       email: "",
+    //       password: ""
+    //     })
+    //   })
+  }
   return (
     <>
       <div className="vh-100 d-flex align-items-center">
@@ -80,6 +178,7 @@ function Login() {
                     id="email"
                     placeholder="Email"
                     className="form-control"
+                    onChange={handleChangeUser}
                   />
                 </div>
               </div>
@@ -91,7 +190,15 @@ function Login() {
                     id="password"
                     placeholder="Password"
                     className="form-control"
+                    onChange={handleChangeUser}
                   />
+                </div>
+              </div>
+              <div className="row mt-4 mb-4 justify-content-center">
+                <div className="col-lg-4 d-flex justify-content-center">
+                  <button onClick={handleLoginUser} className="btn btn-primary rounded-pill w-100">
+                    Login
+                  </button>
                 </div>
               </div>
             </div>
@@ -110,6 +217,7 @@ function Login() {
                     id="email"
                     placeholder="Email"
                     className="form-control"
+                    onChange={handleChangeSeller}
                   />
                 </div>
               </div>
@@ -121,29 +229,31 @@ function Login() {
                     id="password"
                     placeholder="Password"
                     className="form-control"
+                    onChange={handleChangeSeller}
                   />
+                </div>
+              </div>
+              <div className="row mt-4 mb-4 justify-content-center">
+                <div className="col-lg-4 d-flex justify-content-center">
+                  <button onClick={handleLoginSeller} className="btn btn-primary rounded-pill w-100">
+                    Login
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           {/* Input End */}
           {/* F Password Start */}
-          <div className="row my-3 justify-content-center">
+          {/* <div className="row my-3 justify-content-center">
             <div className="col-lg-4 d-flex justify-content-end">
               <Link to="#">
                 <span className="">Forgot password?</span>
               </Link>
             </div>
-          </div>
+          </div> */}
           {/* F Password End */}
           {/* Button Start */}
-          <div className="row mb-4 justify-content-center">
-            <div className="col-lg-4 d-flex justify-content-center">
-              <button className="btn btn-primary rounded-pill w-100">
-                Primary
-              </button>
-            </div>
-          </div>
+
           {/* Button End */}
           {/* Register Start */}
           <div className="row">

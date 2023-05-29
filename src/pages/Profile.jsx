@@ -217,7 +217,7 @@ function Profile() {
                           <tr key={element.id}>
                             <th scope="row">{index + 1}</th>
                             <td>{element.product_name}</td>
-                            <td>{element.product_price}</td>
+                            <td>{`Rp.`+element.product_price}</td>
                             <td>
                               <div>
                                 {/* <ModalDelete
